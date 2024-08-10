@@ -35,8 +35,13 @@
     }
 
     .my-nav {
-        background: transparent;
-        position: fixed;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 3% 5%;
+      z-index: 10;
   
     }
 
@@ -54,7 +59,7 @@
     }
 
     .lg-txt {
-        font-size: 30px !important;
+        font-size:  30px !important;
        margin-right: 300px !important;
        font-family: "Bebas Neue", sans-serif !important;
      font-weight: 400 !important;
@@ -74,19 +79,30 @@
        }
 
        nav li a {
-        color: white !important;
+        /* background-color: #dc030f !important; */
+        border: 2px solid #ff9e23 !important;
+        color:  #fb6825 !important;
+        padding: 0.25rem 0.5rem !important;
+        border-radius: 4px !important;
+        text-decoration: none;
+        font-size: 25px !important;
+        font-family: "Bebas Neue", sans-serif !important;
+        margin-left: 33rem;
+        backdrop-filter: blur(30px) !important;
+        /* color: white !important;
         text-decoration: none !important;
-        font-size: 20px !important;
-        margin-right: 30px;
+        font-size: 25px !important;
+        font-family: "Bebas Neue", sans-serif !important;
+        border-radius: 30px;
+        margin-left: 30rem;
         font-weight: 500 !important;
         justify-content: center;
-        font-weight: 400;
-        font-style: normal;
-        transition: 0.4s ease-in-out;
+           
+        transition: 0.4s ease-in-out; */
        }
 
        nav li a:hover {
-         color: #fb6825 !important;
+         color: white !important;
          border-bottom: 1px solid  #ff9e23;
          border-top: 1px solid  #ff9e23 ;
          transition: 0.4s ease-in-out;
