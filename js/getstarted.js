@@ -17,7 +17,7 @@
     interactive: false,
   });
 
-  var titles = ["Cartoon", "Anime"];
+  var titles = ["Cartoon", "Animated Movies"];
   var msTitles = new MomentumSlider({
     el: slidersContainer,
     cssClass: "ms--titles",
@@ -38,8 +38,8 @@
     el: slidersContainer,
     cssClass: "ms--links",
     range: [0, 1],
-    rangeContent: function () {
-      return '<a class="ms-slide__link">Watch Now !</a>';
+    rangeContent: function (i) {
+      return '<a class="ms-slide__link" href="' + getLinkUrl(i) + '">Watch Now !</a>';
     },
     vertical: true,
     interactive: false,
@@ -50,12 +50,11 @@
       case 0:
         return "Cartoon.html";
       case 1:
-        return "Anime.html"; 
+        return "animated.html";
       default:
         return "";
     }
   }
-  
 
   
   var pagination = document.querySelector(".pagination");
