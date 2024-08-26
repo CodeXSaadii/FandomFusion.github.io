@@ -105,7 +105,6 @@ span {
       border-style: none;
       padding: 10px;
       font-size: 14px;
-      /* letter-spacing: 2px; */
       outline: none;
       border-radius: 25px;
       transition: all .5s ease-in-out;
@@ -255,6 +254,53 @@ footer {
   color: var(--dark);
   margin: 10px;
 }
+
+.modal-body img {
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0px 0px 25px  #f0a11f; 
+    border-radius: 20%;
+    opacity: 0.6;
+    margin-bottom: 1rem;
+
+    
+
+  }
+
+
+
+.modal-body img:hover {
+  box-shadow: 0px 0px 50px #fb6825,
+  0px 0px 100px #fb6825;
+  transition: 0.4s ease-in-out; 
+  opacity: 1;
+}          
+
+.modal-body h2 {
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: 400 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f0a11f;
+}
+
+.modal-body p {
+  margin-right: 4rem;
+  font-size: 15px;
+  color: #f0a11f;
+}
+
+.modal-body strong {
+  color: #fb6825;
+}
+
+
+
+
 
 /* MEDIA QUERIES */
 

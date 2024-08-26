@@ -35,13 +35,8 @@
     }
 
     .my-nav {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding: 3% 5%;
-      z-index: 10;
+        background: transparent;
+        position: fixed;
   
     }
 
@@ -50,6 +45,7 @@
         width: 100px !important;
         justify-content: center !important;
         margin-top: 2px !important;
+        /* margin-left: 20px !important; */
         margin-bottom: 2px !important;
         padding-left: 2px !important;
         background: transparent !important;
@@ -58,7 +54,7 @@
     }
 
     .lg-txt {
-        font-size:  30px !important;
+        font-size: 23px !important;
        margin-right: 300px !important;
        font-family: "Bebas Neue", sans-serif !important;
      font-weight: 400 !important;
@@ -78,78 +74,25 @@
        }
 
        nav li a {
-        border: 2px solid #ff9e23 !important;
-        color:  #fb6825 !important;
-        padding: 0.25rem 0.5rem !important;
-        border-radius: 4px !important;
-        text-decoration: none;
-        font-size: 25px !important;
-        font-family: "Bebas Neue", sans-serif !important;
-        margin-left: 33rem;
-        backdrop-filter: blur(30px) !important;
+        color: white !important;
+        text-decoration: none !important;
+        font-size: 20px !important;
+        margin-right: 30px;
+        font-weight: 500 !important;
+        justify-content: center;
+        font-weight: 400;
+        font-style: normal;
+        transition: 0.4s ease-in-out;
        }
 
        nav li a:hover {
-         color: white !important;
+         color: #fb6825 !important;
          border-bottom: 1px solid  #ff9e23;
          border-top: 1px solid  #ff9e23 ;
          transition: 0.4s ease-in-out;
          text-shadow:  0 0 25px #f0a11f;
        }
 
-       .cssbuttons-io-button {
-        background: #fb6825;
-        color: #fff;
-        font-family: inherit;
-        margin-left: 28rem;
-        padding: 0.35em;
-        padding-left: 1.2em;
-        font-size: 17px;
-        font-weight: 500;
-        border-radius: 0.9em;
-        border: none;
-        letter-spacing: 0.05em;
-        display: flex;
-        align-items: center;
-        box-shadow: inset 0 0 1.6em -0.6em #ff9e23;
-        overflow: hidden;
-        position: relative;
-        height: 2.8em;
-        padding-right: 3.3em;
-       }
-       
-       .cssbuttons-io-button .icon {
-        background: #fff;
-        margin-left: 1em;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 2.2em;
-        width: 2.2em;
-        border-radius: 0.7em;
-        box-shadow: 0.1em 0.1em 0.6em 0.2em #ff9e23 ;
-        right: 0.3em;
-        transition: all 0.3s;
-       }
-       
-       .cssbuttons-io-button:hover .icon {
-        width: calc(100% - 0.6em);
-       }
-       
-       .cssbuttons-io-button .icon svg {
-        width: 1.1em;
-        transition: transform 0.3s;
-        color: #f0a11f;
-       }
-       
-       .cssbuttons-io-button:hover .icon svg {
-        transform: translateX(0.1em);
-       }
-       
-       .cssbuttons-io-button:active .icon {
-        transform: scale(0.95);
-       }
        .content {
         width: 100%;
         margin-top: 100px;
@@ -198,6 +141,7 @@
           background-repeat: no-repeat;
         }
         .navbar-toggler {
+         /* background-color: rgba(0,0,0,0.6)  !important; */
           margin-right: 2rem;
           
         }
@@ -205,7 +149,7 @@
           height: 80px !important;
           width: 80px !important;
           display: flex !important;
-  
+
           
         }
         .lg-txt {
@@ -215,21 +159,13 @@
           left: 0 !important;
           margin-right: 1rem !important;
         }
-        nav li a {
-          font-size: 15px !important;
-        }
-         
 
         .jt__text{
             font-size: 40px !important;
             justify-content:  center;
             display: flex;
             align-items: center;
-            
-        }
-
-        .click-here {
-          margin-left: 15rem;
+            margin-right: 10rem;
         }
 
        
@@ -330,32 +266,6 @@
         filter: blur(0px);
         }
       }
-
-      @media (max-width: 768px) {
-        .title {
-            font-size: 24px;
-            margin-left: 1.5rem;
-        }
-        .div-txt {
-            bottom: 10px;
-        }
-        .click-here {
-          margin-left: 2rem !important;
-          font-size: 18px !important;
-          margin-bottom: 10rem !important;
-        
-    }
-  }
-    
-    @media (max-width: 480px) {
-        .title {
-            /* font-size: 24;
-            margin-left: 2rem; */
-           font-size: 24px !important;
-          
-           
-        }
-      }
       
       
       
@@ -387,9 +297,6 @@
         font-size: 30px;
         cursor: pointer;
         margin-bottom: 20px;
-        margin-top: 10rem;
-        
-        
       }
 
       .click-here:hover {
