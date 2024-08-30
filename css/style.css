@@ -193,7 +193,7 @@
 
        @media (max-width: 768px){
         .main-container {
-          background-image: url(pics/Index-bg-mb.png);
+          background-image: url(images2/mb-bg.png);
           background-size: cover;
           background-repeat: no-repeat;
         }
@@ -204,9 +204,7 @@
         .logo {
           height: 80px !important;
           width: 80px !important;
-          display: flex !important;
-  
-          
+          display: flex !important; 
         }
         .lg-txt {
           font-size: 25px !important;
@@ -218,22 +216,25 @@
         nav li a {
           font-size: 15px !important;
         }
-         
-
-        .jt__text{
-            font-size: 40px !important;
-            justify-content:  center;
-            display: flex;
-            align-items: center;
-            
+        .jt__text {
+          font-size: 40px !important;
+          margin-right: 5rem !important;
         }
-
+        .title {
+          font-size: 24px;
+          margin-left: 1.5rem;
+      }
+      .div-txt {
+          bottom: 10px;
+      }
         .click-here {
-          margin-left: 15rem;
-        }
-
+          font-size: 18px !important;
+          margin-left: 4rem !important;
+          margin-bottom: 10rem !important;
        
-    }
+        }
+      }
+    
     .logo-anim {
         display: flex;
         justify-content: center;
@@ -331,32 +332,8 @@
         }
       }
 
-      @media (max-width: 768px) {
-        .title {
-            font-size: 24px;
-            margin-left: 1.5rem;
-        }
-        .div-txt {
-            bottom: 10px;
-        }
-        .click-here {
-          margin-left: 2rem !important;
-          font-size: 18px !important;
-          margin-bottom: 10rem !important;
-        
-    }
-  }
+
     
-    @media (max-width: 480px) {
-        .title {
-            /* font-size: 24;
-            margin-left: 2rem; */
-           font-size: 24px !important;
-          
-           
-        }
-      }
-      
       
       
       .debug .jt__row:nth-child(even) {

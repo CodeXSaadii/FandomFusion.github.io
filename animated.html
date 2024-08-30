@@ -46,7 +46,7 @@
     />
   <link rel="stylesheet" href="css/animated.css">
   <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
-  <script src="js/animated.js"></script>
+  <script src="js/api.js"></script>
 </head>
 <body>
  
@@ -70,10 +70,10 @@
                         <a class="nav-link"  href="#">Animated Movies</a>
                       </li>
                     </ul>
-                      <div class="search-box">
-                        <button class="btn-search"><i class="fas fa-search"></i></button>
-                        <input type="text" class="input-search" placeholder="Type to Search...">
-                      </div>
+                    <div class="search-box">
+                      <button class="btn-search" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="getMovie()"><i class="fas fa-search"></i></button>
+                      <input type="text" class="input-search" placeholder="Type to Search..." id="ID_Input" >
+                    </div>
                     </ul>
                   </div>
                 </div>
@@ -136,6 +136,19 @@
       <p>2024 Fandom Fusion, Inc.</p>
       <p>Muhammad Saad Nadeem © 2024 - All Rights Reserved</p>
     </footer>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+        <div class="modal-body" id="movieDetails">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

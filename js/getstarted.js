@@ -56,6 +56,12 @@
     }
   }
 
+  var game = document.getElementById(id-game)
+  var gameContainer = document.getElementById(id-game-container)
+  if (game === "pass") {
+    console.log(game` jsdb 
+      }ISB   }
+
   
   var pagination = document.querySelector(".pagination");
   var paginationItems = [].slice.call(pagination.children);
