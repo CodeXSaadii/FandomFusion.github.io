@@ -264,9 +264,8 @@ footer {
     border-radius: 20%;
     opacity: 0.6;
     margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
+
+    
 
   }
 
@@ -283,6 +282,9 @@ footer {
   font-size: 40px;
   font-family: "Bebas Neue", sans-serif !important;
   font-weight: 400 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #f0a11f;
 }
 
